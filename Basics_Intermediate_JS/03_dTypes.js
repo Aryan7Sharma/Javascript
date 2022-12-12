@@ -49,5 +49,5 @@ console.log(x, typeof(x))
 // array/object
 var b = null
 var c = undefined
-x = [1,"hello",0.1,b,c]
+x = [1,"hello",0.1,b,c,true]
 console.log(x, typeof(x))
