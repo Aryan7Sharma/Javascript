@@ -36,5 +36,140 @@ console.log(document.querySelectorAll("#main_h2"))
 console.log(document.getElementById("main_h2"))
 
 
+// we can also use queryselector on child node but not a getelementById.
 
-// listeners
+// Event-listeners.
+
+/*const increment = document.querySelector('button.increment')
+const decrement = document.querySelector('button.decrement')
+let counter = 0
+function incrementCounter(){
+    const conterEl = document.getElementById('counter')
+    counter++
+    conterEl.innerText = counter
+}
+function decrementCounter(){
+    const conterEl = document.getElementById('counter')
+    counter--
+    conterEl.innerText = counter
+}
+increment.addEventListener('click', incrementCounter)
+decrement.addEventListener('click', decrementCounter)*/
+
+
+
+// Creating Element by js
+/*const increment = document.querySelector('button.increment')
+const decrement = document.querySelector('button.decrement')
+const conterEl = document.getElementById('counter')
+const ulElement = document.getElementById('list-items')
+let counter = 0
+
+function incrementCounter(){
+    counter++
+    conterEl.innerText = counter
+
+    // create an element
+    const li = document.createElement('li')
+    const b = document.createElement('b')
+
+    const textNode1 = document.createTextNode(counter)
+    b.appendChild(textNode1)
+
+    const textNode2 = document.createTextNode("Number ")
+
+    // appending
+    li.appendChild(textNode2)
+    li.appendChild(b)
+
+    ulElement.appendChild(li)
+}
+function decrementCounter(){
+    if (counter>0){
+        counter--
+        const ul = ulElement.getAttributeNames('li')
+        
+        console.log(ul)
+        
+    }
+    conterEl.innerText = counter
+}
+increment.addEventListener('click', incrementCounter)
+decrement.addEventListener('click', decrementCounter)
+*/
+
+
+/*
+const increment = document.querySelector('button.increment')
+const decrement = document.querySelector('button.decrement')
+const conterEl = document.getElementById('counter')
+const ulElement = document.getElementById('list-items')
+let counter = 0
+
+function incrementCounter(){
+    counter++
+    conterEl.innerText = counter
+
+    // create an element
+    const li = document.createElement('li')
+    li.setAttribute('data-counter', counter)
+    li.innerHTML = counter + '<b>:counter</b>'
+    console.log(li)
+    // appending
+    ulElement.appendChild(li)
+}
+function decrementCounter(){
+    if (counter>0){
+        const li = ulElement.querySelector('[data-counter="'+counter+'"]');
+        const number = parseInt(li.getAttribute('data-counter'), 10);
+        console.log(number)
+        li.remove()
+        counter--  
+    }
+    conterEl.innerText = counter
+}
+increment.addEventListener('click', incrementCounter)
+decrement.addEventListener('click', decrementCounter)
+*/
+
+
+
+// css class manuplation
+const increment = document.querySelector('button.increment')
+const decrement = document.querySelector('button.decrement')
+const conterEl = document.getElementById('counter')
+const ulElement = document.getElementById('list-items')
+let counter = 0
+
+function incrementCounter(){
+    counter++
+    conterEl.innerText = counter
+
+    // create an element
+    const li = document.createElement('li')
+    li.setAttribute('data-counter', counter)
+
+    if (counter%2 === 0){
+        li.style.background = 'red'
+        li.style.padding = '20px'
+    } else{
+        li.setAttribute('class', 'green')
+        li.style.padding = '20px'
+    }
+    li.innerHTML = counter + '<b>:counter</b>'
+
+    // appending
+    ulElement.appendChild(li)
+}
+function decrementCounter(){
+    if (counter>0){
+        const li = ulElement.querySelector('[data-counter="'+counter+'"]');
+        const number = parseInt(li.getAttribute('data-counter'), 10);
+        console.log(number)
+        li.remove()
+        counter--  
+    }
+    conterEl.innerText = counter
+}
+increment.addEventListener('click', incrementCounter)
+decrement.addEventListener('click', decrementCounter)
