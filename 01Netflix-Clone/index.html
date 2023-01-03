@@ -6,9 +6,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/*" href="images/title-logo.ico">
     <title>Netflix</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    
+    <div class="container">
+        <!--Navbar-->
+        <div class="navigation flex">
+            <div class="logo">
+                <img src="images/asset 1.octet-stream" alt="">
+            </div>
+        
+
+            <div class="nabvar flex" id="navbar">
+
+                <div class="left-nav flex">
+                    <ul class="menu flex">
+                        <li>Home</li>
+                        <li>TV Shows</li>
+                        <li>Movies</li>
+                        <li>New & Popular</li>
+                        <li>My List</li>
+                    </ul>
+                </div>
+
+                <div class="right-nav flex">
+                    <span class="fa fa-search fa" aria-hidden="true">
+                        <p>Children</p>
+                    </span>
+                    <span class="fa fa-bell-o fa" aria-hidden="true"></span>
+                    <img src="" alt="">
+                    <span class="fa fa-caret-down fa" aria-hidden="true"></span>
+                </div>
+                
+            </div>
+
+            <span class="togglebtn" onclick="toggle()">&#9776;</span>
+
+        </div>
+
+        <!--Banner Section-->
+        <div class="inner">
+            <div class="banner flex">
+                <h3>Marvel's Studio's</h3>
+                <h1>Avengers : End Game</h1>
+                <div class="banner-button flex">
+                    <button class="btn"><span class="fa fa-play play" aria-hidden="true"></span>Play</button>
+                    <button class="btn btn1"><span class="fa fa-info-circle play info" aria-hidden="true"></span>More Info</button>
+                </div>
+            </div>
+            <div class="carousel">
+                <h3>New Relase</h3>
+                <div class="carousel-slider">
+                    <div class="carousel-list">
+                        <div class="carousel-item">
+                            <img src="https://i.pinimg.com/236x/95/ec/24/95ec24d2ec833dbc69857ef923803a39.jpg" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://i.pinimg.com/236x/01/7a/8f/017a8f1b5d6cd56f8a66459a2715ba3e.jpg" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://i.pinimg.com/236x/24/05/f5/2405f5d1220d45fef53df0bfe804e104.jpg" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://i.pinimg.com/236x/92/6a/0f/926a0f90cc0a4aac7793352ae226e2c2.jpg" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://in.pinterest.com/pin/784048616370752907/" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://i.pinimg.com/236x/49/63/a4/4963a45e2e9e40981bc5dc724b67cbcf.jpg" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://i.pinimg.com/236x/8b/35/4f/8b354fe876d2f7d9134e6035fff78d9c.jpg" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://i.pinimg.com/236x/1c/1d/bf/1c1dbf241152c698e4ac07a9b1cfa65f.jpg" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://i.pinimg.com/236x/a0/1c/06/a01c067856a02f6193e17110809fbb81.jpg" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://i.pinimg.com/236x/59/9f/61/599f61816b0fb3f2fa1467b00f1fb039.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="video-container">
+        <div class="color-overplay">
+        </div>
+        <video autoplay loop muted> 
+            <source src="https://pagalstatus.com/wp-content/uploads/2022/06/Best-Avengers-Full-Screen-HD-Status-Video.mp4?_=1">
+        </video>
+    </div>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
