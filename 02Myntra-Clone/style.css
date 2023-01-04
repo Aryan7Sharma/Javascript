@@ -13,7 +13,7 @@ header{
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 .container{
-    padding: 0 10vw;
+    padding: 0 5vw;
     margin: auto;
 }
 nav{
@@ -44,14 +44,125 @@ nav .left ul li{
     width: 80vw;
     margin: 12px 0;
 }
-.section1 .itemImg{
-    width: 10vw;
-    margin-block: 6px;
-    margin-inline: calc(10vw / 19);
-}
+
+
+/* FOOTER */
 footer{
-    text-align: center;
-    padding: 23px;
     box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+    background: #FAFBFC;
+}
+.footer p {
+    color: #282c3f;
+    font-size: 12px;
+    font-weight: 500;
+}
+.footer .footer-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-block: 20px;
 }
 
+/* Section1 */
+.footer-generalInfo .shopping-links{
+    padding-right: 20px;
+}
+.footer-generalInfo .experience{
+    padding-right: 20px;
+    padding-top: 13px;
+}
+.footer-generalInfo a{
+    color: #696b79;
+    text-decoration: none;
+    font-size: 12px;
+    padding-bottom: 5px;
+}
+.footer-generalInfo .guarantee{
+    gap: 10px;
+}
+.app-download-links a img{
+    height: 42px;
+}
+.media-links a{
+    margin-right: 15px;
+}
+.media-links a img{
+    width: 20px;
+    height: 20px;
+}
+.experience .experience-title{
+    margin-bottom: 25px;
+}
+.experience .kit{
+    margin-block: 20px 10px;
+}
+.guarantee .section img{
+    width: 47.5;
+    height: 40px;
+    margin-right: 10px;
+}
+
+/* Section 2 */
+.footer-popularInfo .Ptitle{
+    width: 15%;
+    font-size: 12px;
+}
+.footer-popularInfo hr{
+    border: 1px;
+    height: 1px;
+    width: 80%;
+    overflow: visible;
+    margin-block: 8px;
+    background-color: #94969f;
+}
+.footer-popularInfo .pSearch-links{
+    margin-top: 30px;
+}
+.footer-popularInfo .pSearch-links a{
+    color: #696b79;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+/* Section 3 */
+.footer-contactInfo{
+    margin-top: 40px;
+}
+
+
+/* Section 4 */
+.footer-addressInfo{
+    margin-block: 30px;
+    border-top: 1px solid #eaeaec;
+    padding-top: 20px;
+}
+.footer-addressInfo .addressInfo-title{
+    margin-block: 15px;
+    color: #282c3f;
+    line-height: 20px;
+}
+
+.footer-addressInfo .addInfoContainer{
+    margin-top: 10px;
+}
+.addInfoContainer .address{
+    gap: 10px;
+}
+.addInfoContainer .legalInfo{
+    gap: 5px;
+    justify-content: flex-end;
+}
+.addInfoContainer .legalInfo p{
+    font-size: 15px;
+}
+
+/* Section 5 */
+.footer-allDescInfo{
+    margin-top: 15px;
+    border-top: 1px solid #eaeaec;
+}
+.footer-allDescInfo h1 h2 h3{
+    margin-block: 30px;
+}
+.footer-allDescInfo p{
+    margin-block: 14px;
+}

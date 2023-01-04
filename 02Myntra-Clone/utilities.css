@@ -1,6 +1,9 @@
 .flex{
     display: flex;
 }
+.flex-column{
+    flex-direction: column;
+}
 .items-center{
     align-items: center;
 }
@@ -28,4 +31,11 @@
 } 
 .flex-wrap{
     flex-wrap: wrap;
+}
+.section .itemImg{
+    width: 10vw;
+    margin-block: 6px;
+}
+.empty-div{
+    height: 20px;
 }
