@@ -160,9 +160,25 @@ footer{
     margin-top: 15px;
     border-top: 1px solid #eaeaec;
 }
-.footer-allDescInfo h1 h2 h3{
-    margin-block: 30px;
+.footer-allDescInfo h1,h2,h3{
+    margin-block: 30px -10px;
+    font-size: 16px;
 }
 .footer-allDescInfo p{
     margin-block: 14px;
+}
+.footer-allDescInfo ul{
+    margin-block: 14px;
+    padding-left: 40px;
+    text-decoration: none;
+    list-style: none;
+}
+.footer-allDescInfo ul li{
+    margin-block: 14px;
+}
+.footer-allDescInfo .ul1{
+    list-style-type: decimal;
+}
+.footer-allDescInfo .ul3{
+    list-style-type: decimal;
 }
