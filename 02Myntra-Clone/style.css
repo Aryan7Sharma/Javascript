@@ -54,6 +54,7 @@ nav .left ul li{
 footer{
     box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
     background: #FAFBFC;
+    padding-inline: 20px;
 }
 .footer p {
     color: #282c3f;
