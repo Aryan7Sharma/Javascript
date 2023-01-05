@@ -37,9 +37,44 @@
         flex-direction: row;
         justify-content: space-between;
     }
+    .footer-contactInfo{
+        flex-direction: column;
+    }
+    .addInfoContainer{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
 }
 @media screen and (max-width:480px){
     .search{
-        width: 70vw;
+        width: 60vw;
+    }
+    header .header-toogle{
+        display: block;
+        font-size: 25px;
+    }
+    header ul li{
+        display: none;
+    }
+    header nav .left{
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 20vw;
+    }
+    header{
+        height: 70px;
+    }
+    header nav{
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    header nav .right{
+        flex-direction: row;
+        width: 80vw;
+        justify-content: space-between;
+    }
+    header nav .right .rightBox{
+        display: none;
     }
 }
