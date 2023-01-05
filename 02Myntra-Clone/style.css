@@ -48,10 +48,18 @@ nav .left ul li{
     margin: 12px 0;
 }
 .section .itemImg{
-    width: 10vw;
-    margin-block: 6px;
+    width: calc(100vw / 9);
 }
 
+.text-banner-title{
+    margin: 50px 0 10px 30px;
+}
+.text-banner-subtitle{
+    margin: 0 0 50px 0;
+}
+.empty-div{
+    margin-block: 25px;
+}
 
 /* FOOTER */
 footer{
