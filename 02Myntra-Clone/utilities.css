@@ -32,10 +32,6 @@
 .flex-wrap{
     flex-wrap: wrap;
 }
-.section .itemImg{
-    width: 10vw;
-    margin-block: 6px;
-}
 .empty-div{
     height: 20px;
 }

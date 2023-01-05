@@ -41,8 +41,12 @@ nav .left ul li{
     background: #f2f2f2; 
 }
 .section1 .homeImg{
-    width: 80vw;
+    width: 90vw;
     margin: 12px 0;
+}
+.section .itemImg{
+    width: 10vw;
+    margin-block: 6px;
 }
 
 
