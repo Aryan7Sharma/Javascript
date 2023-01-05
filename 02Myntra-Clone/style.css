@@ -57,7 +57,7 @@ footer{
 }
 .footer p {
     color: #282c3f;
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 500;
 }
 .footer .footer-container{
@@ -67,6 +67,9 @@ footer{
 }
 
 /* Section1 */
+.footer-generalInfo{
+    margin-bottom: 24px;
+}
 .footer-generalInfo .shopping-links{
     padding-right: 20px;
 }
@@ -77,7 +80,7 @@ footer{
 .footer-generalInfo a{
     color: #696b79;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 15px;
     padding-bottom: 5px;
 }
 .footer-generalInfo .guarantee{
@@ -124,7 +127,7 @@ footer{
 .footer-popularInfo .pSearch-links a{
     color: #696b79;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 15px;
 }
 
 /* Section 3 */
@@ -163,13 +166,17 @@ footer{
 .footer-allDescInfo{
     margin-top: 15px;
     border-top: 1px solid #eaeaec;
+    font-size: 14px;
+    line-height: 18px;
 }
 .footer-allDescInfo h1,h2,h3{
     margin-block: 30px -10px;
-    font-size: 16px;
+    font-size: 14px;
+    color: #282c3f;
 }
 .footer-allDescInfo p{
     margin-block: 14px;
+    color: #94969f;
 }
 .footer-allDescInfo ul{
     margin-block: 14px;
@@ -178,11 +185,19 @@ footer{
     list-style: none;
 }
 .footer-allDescInfo ul li{
-    margin-block: 14px;
+    margin-block: 14px;  
+    font-size: 12px;
+    font-weight: 500;
 }
 .footer-allDescInfo .ul1{
     list-style-type: decimal;
 }
 .footer-allDescInfo .ul3{
     list-style-type: decimal;
+}
+.footer-allDescInfo p strong{
+    color:#282c3f;
+}
+.footer-allDescInfo .ul2 li{
+    color: #94969f;
 }
