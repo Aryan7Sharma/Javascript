@@ -1,0 +1,11 @@
+{
+  "name": "api-server",
+  "version": "0.0.1",
+  "description": "demo for understanding api and server in nodeJs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
