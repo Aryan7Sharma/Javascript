@@ -1,8 +1,20 @@
-const {readFileSync, writeFileSync} = require('fs')
-console.log(readFileSync.name, writeFileSync)
+const fs = require('fs')
+//console.log(fs)
 
-const first = readFileSync('./context/first.txt','utf-8');
-const second = readFileSync('./context/second.txt','utf-8');
-console.log(first,second)
+const {readFileSync, writeFileSync} = require('fs') 
+console.log(readFileSync,writeFileSync)
 
-writeFileSync('./context/result-sync.txt',`Here is the result : ${first}, ${second}`,{flag:'a'})
+const first = readFileSync('./content/first.txt', 'utf-8')
+const second = readFileSync('./content/subfolder/second.txt', 'utf-8')
+console.log(first, second)
+
+
+// this will overwrite the file
+//writeFileSync('./content/result-sync.txt', `here is the result : ${first}---and----${second}`)
+
+// appending content in the file not overwriting
+writeFileSync(
+    './content/result-sync.txt', 
+    `here is the result : ${first}---and----${second}`,
+    {flag: 'a'} // a means append
+    )

@@ -1,24 +1,6 @@
-const { readFile, writeFile} = require('fs')
-console.log(readFile, writeFile)
-readFile('./context/first.txt', 'utf-8', (err, result) => {
-    if (err) {
-        console.log(err)
-        return
-    }
-    const first = result
-    readFile('./context/second.txt', 'utf-8', (err, result) =>{
-        if (err){
-            console.log(err)
-            return
-        }
-        const second = result
-        writeFile('./context/result-sycn.txt', `Here is the result: ${first}, ${second}`, (err, result) => {
-            if (err) {
-                console.log(err)
-                return
-            }
-            console.log('done with this task')
-        })
-    })
-})
-console.log('starting new task')
+const  _ = require('lodash');
+console.log(_)
+const items = [1, [2, [3, [4,[5,]]]]]
+const newItems = _.flattenDeep(items)
+console.log(items)
+console.log(newItems)

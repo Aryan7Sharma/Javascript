@@ -1,17 +1,20 @@
-const os = require('os')
+const os = require("os")
 //console.log(os)
 
-// info about current user
-const user = os.userInfo()
-console.log(user)
+// info about host
+console.log(os.hostname())
 
-// methon returns the system uptime in seconds
+//info about current user
+console.log(os.userInfo())
+
+// method return the system uptime in seconds
 console.log(`The System Uptime is ${os.uptime()} seconds`)
 
+// CurrentOS info
 const currentOS = {
-    name:os.type(),
+    name: os.type(),
     release: os.release(),
-    totalMem: os.totalmem(),
-    freeMen: os.freemem(),
+    totalmem: os.totalmem(),
+    freemem: os.freemem()
 }
 console.log(currentOS)
