@@ -287,8 +287,3 @@ Enjoy your pizza!
 Deep nesting makes code hard to read. **Use Promises or Async/Await instead**.
 
 ---
-
-## **🔹 Final Thoughts**
-Callbacks are **powerful but can lead to complexity**. The **next step** is learning **Promises & Async/Await** for cleaner, maintainable code. 🚀  
-
-Want a **Promises version** of these examples? Let me know! 😊
